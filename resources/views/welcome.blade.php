@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ 'Sales Hub' }}</title>
+    <title>Sales Hub</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <x-application-logo class="w-20 h-20 object-cover" />
+        <x-application-logo />
     </header>
 </body>
 
