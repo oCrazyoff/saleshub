@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .header-welcome {
+        @apply sticky top-0 left-0 w-full h-[5rem] bg-azul-escuro/80 text-white shadow-xl backdrop-blur-lg;
+
+        & .interface {
+            @apply flex items-center justify-between h-full;
+
+            & .logo,
+            nav {
+                @apply flex items-center justify-center gap-5;
+            }
+
+            & #logo {
+                @apply w-12 h-12 text-2xl;
+            }
+
+            & .logo {
+                @apply text-2xl text-azul font-bold;
+            }
+
+            & nav {
+                & a {
+                    @apply py-2 px-5 rounded-lg bg-azul;
+
+                    &.entrar-btn {
+                        @apply bg-transparent border-2 border-azul text-azul;
+                    }
+                }
+            }
+        }
+    }
+
+    #hero {
+        @apply h-[calc(100dvh-5rem)];
+
+        & .interface {
+            @apply flex flex-col gap-8 items-center justify-center h-full;
+
+            & h2,
+            p {
+                @apply text-center;
+            }
+
+            & h2 {
+                @apply text-6xl text-azul-escuro font-semibold;
+
+                & span {
+                    @apply text-azul;
+                }
+            }
+
+            & p {
+                @apply text-2xl text-preto-opaco w-3/4;
+            }
+
+            & nav {
+                @apply flex items-center justify-center gap-5 text-white;
+
+                & a {
+                    @apply py-2 px-5 rounded-lg bg-azul;
+
+                    &.login-btn {
+                        @apply bg-transparent border-2 border-azul text-azul;
+                    }
+                }
+            }
+        }
+    }
+}

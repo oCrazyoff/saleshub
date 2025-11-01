@@ -1,3 +1,21 @@
+@import './welcome.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    * {
+        @apply duration-300 ease-in-out;
+        /*outline: 1px solid red;*/
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
+}
+
+@layer components{
+    .interface {
+        @apply mx-auto max-w-[1280px] w-full px-3 lg:px-5 py-2;
+    }
+}
